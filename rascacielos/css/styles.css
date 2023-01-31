@@ -1,0 +1,84 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    height: 10vh;
+}
+
+#logo {
+    width: 130px;
+}
+
+ul {
+    list-style: none !important;
+    color: #0086B5;
+    line-height: 10vh;
+}
+
+ul li a {
+    color: #0086B5;
+    line-height: 10vh;
+}
+
+main {
+    height: 80vh;
+    background-color: antiquewhite;
+}
+
+#form {
+    background-color: rgb(188, 188, 255);
+}
+
+#destinos_frecuentes {
+    background-color: rgb(152, 197, 255);
+}
+
+h2 {
+    color: #004570;
+    font-style: italic;
+}
+
+footer {
+    height: 10vh;
+    background-color: rebeccapurple;    
+}
+
+#ba {
+    background-image: url(../assets/images/buenosaires.jpeg);
+
+}
+
+#montevideo {
+    background-image: url(../assets/images/montevideo.jpeg);
+}
+
+#islandia {
+    background-image: url(../assets/images/islandia.jpeg);
+}
+
+#toronto {
+    background-image: url(../assets/images/toronto.jpeg);
+}
+
+#los_cabos {
+    background-image: url(../assets/images/loscabos.jpeg);
+}
+
+#sidney {
+    background-image: url(../assets/images/sidney.jpeg);
+}
+
+#promociones {
+
+    padding: 50px;
+}
+
+@media (max-width: 425px) {
+    #logo {
+        width: 100px;
+    }
+}
+
