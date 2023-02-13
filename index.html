@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+        <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>Rascacielos</title>
+    </head>
+<body>
+    <header class="container-fluid">
+        <nav class="row h-100">
+            <a href="../index.html" class="col-md-12 col-lg-2 d-flex justify-content-between align-items-center" href="">
+                <img src="./assets/images/logo_blanco.png" alt="" width="120px" id="logo">  
+            </a>
+            <ul class="col-md-12 col-lg-8 d-flex justify-content-between align-items-center">
+                <li><a href="./pages/reservar.html">Reservar</a></li>
+                <label for="">|</label>
+                <li><a href="./pages/check_in.html">Check-in</a></li>
+                <label for="">|</label>
+                <li><a href="./pages/mi_viaje.html">Mi Viaje</a></li>
+                <label for="">|</label>
+                <li><a href="./pages/club_star.html">Club Star</a></li>
+                <label for="">|</label>
+                <li><a href="./pages/paquetes.html">Paquetes</a></li>
+            </ul>
+            <div class="col-2 d-flex justify-content-center align-items-center">
+                <button type="button" id="login">Iniciar sesión</button>
+            </div>
+        </nav>
+    </header>
+    <main class="container-fluid">
+        <div class="row h-100">
+            <section class="col-md-12 col-lg-6 d-flex flex-column justify-content-center" id="buscar_vuelo">
+                <form method="post">
+                    <h5 id="subtitulo">* Busca tu vuelo *</h5>
+                    <div class="form-group">
+                        <label for="ida_y_vuelta">Ida y vuelta</label>
+                        <input type="radio" name="vuelo" id="ida_y_vuelta" value="Ida y vuelta">
+                        <label for="solo_ida">Sólo ida</label>
+                        <input type="radio" name="vuelo" id="solo_ida" value="Solo ida">
+                    </div>
+                    <div class="row">
+                        <div class="col-6 form-group">
+                            <label for="origen">Origen</label>
+                            <div class="dropdown" id="origen">
+                                <button id="boton_texto" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Seleccionar Origen</button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Aguascalientes, México</a></li>
+                                  <li><a class="dropdown-item" href="#">Cancún, México</a></li>
+                                  <li><a class="dropdown-item" href="#">Chicago, EUA</a></li>
+                                  <li><a class="dropdown-item" href="#">Guadalajara, México</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 form-group">
+                            <label for="destino">Destino</label>
+                            <div class="dropdown" id="destino">
+                                <button id="boton_texto" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Seleccionar Destino</button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Aguascalientes, México</a></li>
+                                    <li><a class="dropdown-item" href="#">Cancún, México</a></li>
+                                    <li><a class="dropdown-item" href="#">Chicago, EUA</a></li>
+                                    <li><a class="dropdown-item" href="#">Guadalajara, México</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 id="subtitulo">* Fechas *</h5>
+                    <div class="row" id="fecha">
+                        <div class="col-6">
+                            <label for="salida">Salida</label>
+                            <input class="form-control" type="date" name="" id="salida" required>
+                        </div>
+                        <div class="col-6">
+                            <label for="salida">Regreso</label>
+                            <input class="form-control" type="date" name="" id="regreso">
+                        </div>
+                    </div>
+                    <h5 id="subtitulo">* Pasajeros *</h5>
+                    <div class="container-fluid d-flex flex-row justify-content-between align-items-center" id="pasajeros">
+                        <div class="row">
+                            <div class="col-4">
+                                <label for="adultos">Adultos</label>
+                                <input class="form-control" type="number" name="" id="adultos" placeholder="1" required>
+                            </div>
+                            <div class="col-4">
+                                <label for="niños">Niños</label>
+                                <input class="form-control" type="number" name="" id="niños" placeholder="0">
+                            </div>
+                            <div class="col-4">
+                                <label for="bebes">Bebés</label>
+                                <input class="form-control" type="number" name="" id="bebes" placeholder="0">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <section class="col-md-12 col-lg-6 h-auto d-flex flex-column justify-content-center" id="destacados">
+                <div >
+                    <div>
+                        <h2 id="titulo_dos" class="d-flex justify-content-center" id="titulo_promocion">* Destinos frecuentes *</h2>
+                    </div>
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./assets/images/cancun.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./assets/images/guadalajara.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./assets/images/chicago.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="container-fluid">
+        <ul class="row h-100 d-flex align-items-center">
+            <li class="col-4"><a href="./pages/terminos_y_condiciones.html">Términos y condiciones</a></li>
+            <li class="col-4"><a href="./pages/contactanos.html">Contáctanos</a></li>
+            <li class="col-4">
+                <img src="./assets/images/facebook.png" alt="" id="facebook" width="40px">
+                <img src="./assets/images/instagram.png" alt="" id="instagram" width="46px">
+            </li>
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
