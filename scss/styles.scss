@@ -1,0 +1,55 @@
+@import "./inicio/inicio";
+@import "./paquetes/paquetes";
+@import "./reservar/reservar";
+@import "./check_in/checkin";
+@import "./mi_viaje/miviaje";
+@import "./club_star/clubstar";
+
+
+@media (max-width: 768px) {
+    #logo {
+      width: 80px; }
+    nav ul label {
+      font-size: 8px; }
+    nav ul li {
+      display: flex;
+      justify-content: center;
+      padding: 0%; }
+    nav ul li a {
+      font-size: 10px; }
+    #login {
+      display: none; }
+    #subtitulo {
+      font-size: 14px !important;
+      margin: 15px 0px 0px 0px !important; }
+    main {
+      font-size: 12px; }
+    .form-control {
+      font-size: 12px; }
+    #boton_texto {
+      font-size: 12px;
+      padding: 5px; }
+    #titulo_dos {
+      font-size: 16px; }
+    .card-title {
+      font-size: 12px !important; }
+    .card-subtitle {
+      font-size: 10px !important; }
+    .card-text {
+      font-size: 10px !important; }
+    .card-link {
+      font-size: 10px; }
+    footer {
+      padding: 0% !important;
+      margin: 0% !important; }
+    footer ul {
+      padding: 0px 20px !important;
+      margin: 0% !important;
+      text-align: center; }
+    footer ul li {
+      font-size: 10px;
+      padding: 0% !important; }
+    #facebook {
+      width: 30px; }
+    #instagram {
+      width: 36px; } }

@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Reserva ahora tu viaje para conocer México con Aerolíneas Rascacielos.">
+        <meta name="keywords"  content="reservar, viajar">
         <link rel="shortcut icon" href="../assets/images/favicon-32x32.png" type="image/x-icon">
         <link 
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
@@ -15,7 +17,7 @@
 <body>
     <header class="container-fluid">
         <nav class="row h-100">
-            <a href="../index.html" class="col-md-12 col-lg-2 d-flex justify-content-between align-items-center" href="">
+            <a href="../index.html" class="col-md-12 col-lg-2 d-flex justify-content-center align-items-center" href="">
                 <img src="../assets/images/logo_blanco.png" alt="" width="120px" id="logo"> 
             </a>
             <ul class="col-md-12 col-lg-8 d-flex justify-content-between align-items-center">
@@ -34,8 +36,70 @@
             </div>
         </nav>
     </header>
-    <main>
-
+    <main class="container-fluid d-flex justify-content-center align-items-center">
+        <form method="post" class="formulario_vuelo_reservar">
+            <h5 class="subtitulo">* Busca tu vuelo *</h5>
+            <div class="form-group">
+                <label for="ida_y_vuelta">Ida y vuelta</label>
+                <input type="radio" name="vuelo" id="ida_y_vuelta" value="Ida y vuelta">
+                <label for="solo_ida">Sólo ida</label>
+                <input type="radio" name="vuelo" id="solo_ida" value="Solo ida">
+            </div>
+            <div class="row">
+                <div class="col-6 form-group">
+                    <label for="origen">Origen</label>
+                    <div class="dropdown" id="origen">
+                        <button id="boton_texto" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Seleccionar Origen</button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Aguascalientes, México</a></li>
+                          <li><a class="dropdown-item" href="#">Cancún, México</a></li>
+                          <li><a class="dropdown-item" href="#">Chicago, EUA</a></li>
+                          <li><a class="dropdown-item" href="#">Guadalajara, México</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 form-group">
+                    <label for="destino">Destino</label>
+                    <div class="dropdown" id="destino">
+                        <button id="boton_texto" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Seleccionar Destino</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Aguascalientes, México</a></li>
+                            <li><a class="dropdown-item" href="#">Cancún, México</a></li>
+                            <li><a class="dropdown-item" href="#">Chicago, EUA</a></li>
+                            <li><a class="dropdown-item" href="#">Guadalajara, México</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h5 class="subtitulo">* Fechas *</h5>
+            <div class="row" id="fecha">
+                <div class="col-6">
+                    <label for="salida">Salida</label>
+                    <input class="form-control" type="date" name="" id="salida" required>
+                </div>
+                <div class="col-6">
+                    <label for="salida">Regreso</label>
+                    <input class="form-control" type="date" name="" id="regreso">
+                </div>
+            </div>
+            <h5 class="subtitulo">* Pasajeros *</h5>
+            <div class="container-fluid d-flex flex-row justify-content-between align-items-center" id="pasajeros">
+                <div class="row">
+                    <div class="col-4">
+                        <label for="adultos">Adultos</label>
+                        <input class="form-control" type="number" name="" id="adultos" placeholder="1" required>
+                    </div>
+                    <div class="col-4">
+                        <label for="niños">Niños</label>
+                        <input class="form-control" type="number" name="" id="niños" placeholder="0">
+                    </div>
+                    <div class="col-4">
+                        <label for="bebes">Bebés</label>
+                        <input class="form-control" type="number" name="" id="bebes" placeholder="0">
+                    </div>
+                </div>
+            </div>
+        </form>
     </main>
     <footer class="container-fluid">
         <ul class="row h-100 d-flex align-items-center">
